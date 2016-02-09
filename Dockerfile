@@ -1,4 +1,4 @@
-FROM docker.cucloud.net/java
+FROM dtr.cucloud.net/cs/java
 
 MAINTAINER Shawn Bower <shawn.bower@gmail.cm>
 
@@ -16,7 +16,7 @@ RUN /opt/logstash/bin/plugin install contrib
 RUN mkdir -p /data/data \
   mkdir -p /data/log \
   mkdir -p /data/plugins \
-  mkdir -p /data/work 
+  mkdir -p /data/work
 
 # elasticsearch
 EXPOSE 9200
